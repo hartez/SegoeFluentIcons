@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SegoeFluentIcons"
+             x:Class="SegoeFluentIcons.MainPage">
+
+    <ScrollView>
+
+        <VerticalStackLayout>
+
+            <Label FontFamily="Segoe" Margin="0,5,0,5" Text="Here's a camera icon using x:Static from XAML:"/>
+            <Label FontFamily="Segoe Fluent Icons" Margin="5" FontSize="24" Text="{x:Static local:Icon.Camera}"/>
+
+            <Label FontFamily="Segoe" Margin="0,15,0,5" Text="And here are all the icons by name:"/>
+            
+            <Grid x:Name="Root" ColumnDefinitions="*,0.3*,*,0.3*" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
